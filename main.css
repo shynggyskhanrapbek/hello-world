@@ -1,0 +1,155 @@
+.banner {
+	background-image: url(banner.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	background-size: cover;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+	background-color: #3b4358;
+	color: white;
+	margin-top: 50px;
+}
+.menu li {
+	list-style: none
+}
+.menu li a{
+	text-decoration: none;
+}
+.menu li a:visited {
+	text-decoration: underline;
+	background: #purple;
+}
+.menu li a:hover {
+	text-decoration: underline;
+	background: #455580;
+}
+.menu li a:active {
+	text-decoration: underline;
+	background: green;
+}
+.navigation a{
+  	display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;	
+    color: white;
+}
+footer {
+    background-color: #3b4358;
+    text-align: center;
+    color: white;
+    display: flex;
+    padding: 40px 17%;
+    font-size: 17px;
+    clear: both;
+    position: relative;
+	margin-top: -200px;
+}
+body {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: #e4eef5;
+}
+ .email {
+	color: white;
+}
+li a {
+	color: white;
+}
+.contacts {
+	float: left	;
+}
+.categories {
+	margin-left: 200px;
+}
+.quick_links {
+    margin-left: 200px;
+}
+#task img {
+	float: left;
+}
+#task p {
+	margin-top: 50px;
+	border: 1px blue;
+	margin-left: 20%;
+	background-color: 	#f9aeae;
+}
+#requirements {
+	margin-top: 100px;
+}
+#task img {
+	margin: 0px 20px 0px 0px;
+}
+.main_content {
+	margin-top: 50px;
+}
+#task p{
+	width: 80%;
+	height: 150x;
+	border: 1px solid black;
+}
+#submission {
+	border: 1px solid black;
+	width: 700px;
+	padding: 20px 20px 20px 50px;
+	background-color: lightgray;
+	float: left;
+	padding: 20px;
+}
+#grading {
+	width: 700px;
+	border: 1px solid black;
+	padding: 20px;
+	background-color: lightgray;
+}
+h5 {
+	font-size: 25px;
+}
+#article p::first-letter  {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: 3b4358;
+}
+footer ul {
+    list-style-type: none;
+}
+#submission img {
+	margin-left: 200px;
+}
+table, th, td {
+    border: 1px solid;
+    margin: 80px auto;
+    font-size: 20px;
+}
+td:nth-child(2n){
+    background-color: lightgreen;
+}
+aside {
+    width: 30%;
+    padding-left: 15px;
+    background-color: lightgray;
+    float: right;
+    margin: 0 1.5%;
+    margin-bottom: 300px;
+    display: inline-block;
+    vertical-align: top; 
+    margin-top: -400px;
+}
+#submission, #grading	{
+	width: 50%;
+	float: left;
+	margin: 0 1.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+footer a {
+    text-decoration: none;
+}
