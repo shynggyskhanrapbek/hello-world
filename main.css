@@ -228,28 +228,13 @@ footer a {
 		 }
 		 #task p {
 		 	float: right;
-		 	margin-right: 15%;
+		 	margin-right: 5%;
 		 }
 		#requirements h2{
 			margin-top: 100%;
 		}
-	.menu a:not(:first-child) {display: none;}
-  .menu a.icon {
-    float: right;
-    display: block;
-  }
-  .menu.responsive {position: relative;}
-  .menu.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .menu.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 		#submission img {
 		  	max-width: 80%;
@@ -342,15 +327,16 @@ footer a {
         	display: inline-block;
         	margin: 0 auto;
         }
+        
         footer {
             text-align: center;
-            font-size: 1.1em;
+            font-size: 16px;
             height: auto;
-            overflow: hidden;
         }
-}
+
 		#task p {
 			width: 70%;
 		}
+
 
 }
