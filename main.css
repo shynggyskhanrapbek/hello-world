@@ -81,7 +81,7 @@ li a {
 #task p {
 	margin-top: 50px;
 	border: 1px blue;
-	margin-left: 20%;
+	margin-left: 30%;
 	background-color: 	#f9aeae;
 }
 #requirements {
@@ -89,13 +89,14 @@ li a {
 }
 #task img {
 	margin: 0px 20px 0px 0px;
+
 }
 .main_content {
 	margin-top: 50px;
 }
 #task p{
 	width: 80%;
-	height: 150x;
+	height: auto;
 	border: 1px solid black;
 }
 #submission {
@@ -155,61 +156,104 @@ aside {
 footer a {
     text-decoration: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
         footer {
             flex-direction: column;
             text-align: center;
-            font-size: 16px;
+            font-size: 1em;
             height: auto;
             overflow: hidden;
+
         }
         .map iframe {
         	width: 80%;
         }
         .contacts, .categories, .quick_links {
-        	padding: -50px;
   			box-sizing: border-box;
   			margin: 0 auto;
         }
         p {
-        	font-size: 16px;
+        	font-size: 1em;
         }
         .banner {
-        	font-size: 35px;
+        	font-size: 2.6em;
         }
         nav ul {
     		flex-direction: column;
     		align-items: center;
   		}  
  		nav li {
-    		margin: 10px 0;
+    		margin: 1% 0;
   		}
   		#submission img {
-  			max-width: 100px;
-  			height: 140px;
-  			float: left	;
+  			max-width: 70%;
+  			height: 70%;
+  			float: right;
+  			margin-right: 10%;
   		}
+  		#submission ul li {
+  			float: right;
+  			margin-right: 30%;
+  		} 
   		#submission {
   			width: 80%
   		}
-  		#requirements {
-  			grid-column: ;
-  		}
   		#task p {
-  			margin: 0 auto;
-  			margin-top: 50px;
+  			margin-top: 10%;
+  			width: 100%;
   		}
-  		#aside {
-  			width: 40%;
+  		aside {
+  			width: 80%;
+  			margin-top: 10%;
   		}
   		#grading {
-  			width: 40%;
+  			width: 80%;
+  			margin-top: 10%;
   		}
+  		table, th, td {
+		 	font-size: 1em;
+		 }
+		 table {
+		 	table-layout: fixed;
+		 	width: 80%;
+		 }
+		 body {
+		 	font-size: 16px;
+		 }
+		 #task img {
+		 	max-width: 100%;
+		 	height: auto;
+		 	display:block;
+        	margin-left: 5%;
+		 }
+		 #task p {
+		 	float: right;
+		 	margin-right: 15%;
+		 }
+		#requirements h2{
+			margin-top: 100%;
+		}
+	.menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+  .menu.responsive {position: relative;}
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 		#submission img {
-		  	max-width: 150px;
-		  	height: 210px;
+		  	max-width: 80%;
+		  	height: 80%;
 		  	float: right;
             padding-right: 15%;
 		}
@@ -221,7 +265,7 @@ footer a {
 		}
   		footer {
             text-align: center;
-            font-size: 16px;
+            font-size: 1em;
             height: auto;
             overflow: hidden;
         }
@@ -233,20 +277,26 @@ footer a {
         	margin: 0 auto;
         }
         body {
-        	font-size: 16px;
+        	font-size: 1em;
         }
         #task img {
         	margin-left: 30%;
         	float: left;
+        	display: block;
+
          }
        #task p{
        	float: right;
+       	margin-right: 10%;
        }
+       #requirements h2{
+       	margin-top: 25%;
+	}
 }
-@media only screen and (max-width: 1179px) {
+@media only screen and (min-width: 1024px) and (max-width: 1179px) {
 		#submission img {
-		  	max-width: 200px;
-		  	height: 280px;
+		  	max-width: 90%;
+		  	height: 90%;
 		  	float: right;
             padding-right: 20%;
 		}
@@ -256,34 +306,51 @@ footer a {
 			text-align: center;
 
 		}
-		  footer {
-            flex-direction: column;
-            text-align: center;
-            font-size: 16px;
-            height: auto;
-        }
+		  
        #task img {
-	       	width: 250px;
-	       	height: 160px;
-	       	padding-right: 30px;
+	       	width: 30%;
+	       	height: auto;
 	       	margin-left: 30%;
+	       	display: inline-grid;
+
        }
-       #task img{
-       		display: inline-grid;
-       }
+    
        #task p {
 	       	height: auto;
-	       	width: 50%;
-	       	margin-right:;
+	       	width: 90%;
 	       	display: inline-grid;
+	       	margin-left: 15%;
        }
-       .categories, .quick_links {
-       	display: inline;
-       }
-       .categories {
-       	float: left;
-       }
-       .quick_links {
-       	float: right;
-       }
+     
+       
+       #requirements {
+		margin-top: 10%;
+	}
+	 .categories, .quick_links {
+        	display: inline-block;
+        	margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            font-size: 1.05em;
+            height: auto;
+            overflow: hidden;
+        }
+}
+@media only screen and (min-width: 1180px)  {
+	 .categories, .quick_links {
+        	display: inline-block;
+        	margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            font-size: 1.1em;
+            height: auto;
+            overflow: hidden;
+        }
+}
+		#task p {
+			width: 70%;
+		}
+
 }
