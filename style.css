@@ -80,7 +80,6 @@ hr {
 	margin-left: 25px;
 }
 
-
 #images {
 	position: relative;
 	overflow: hidden;
@@ -296,7 +295,13 @@ svg {
 	display: block;
 	margin: 0 auto;
   }
-
+  .info {
+	margin-left: 50px; 
+	margin-right: 50px;
+  }
+  .skills {
+	margin-top: 50%;
+  }
   @media only screen and (min-width: 300px) and (max-width: 767px) {
 	.privacy, .quick_links {
 		display: inline-block;
@@ -314,7 +319,45 @@ svg {
 	  }
 	  body {
 		font-size: 1em;
+		width: 100%;
 	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	  }
+	  .left {
+		width: 100%;
+	  }
+	  .right {
+		width: 100%;
+	  }
+	  footer {
+		flex-direction: column;
+		text-align: center;
+		font-size: 1em;
+		height: auto;
+		overflow: hidden;
+
+	}
+	.right h1 {
+		font-size: 1.5em !important;
+	}
+	.row {
+		margin-right: 50px;
+	}
+	#images img{
+		max-width: 100%;
+		width: 100%;
+		height: auto !important;
+
+	}
+	#images li {
+		max-width: 100%;
+		width: 100%;
+		height: auto !important;
+	}
+
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -326,10 +369,41 @@ svg {
 		width: 80%;
 	}
 	footer {
+		flex-direction: column;
 		text-align: center;
 		font-size: 1em;
 		height: auto;
 		overflow: hidden;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+	  }
+	  .left {
+		width: 100%;
+	  }
+	  .right {
+		width: 100%;
+	  }
+	  .skills {
+		margin-top: 50%;
+	  }
+	  .contacti {
+		margin-right: 15%;
+	  }
+	  h1 {
+		text-align: center;
+	  }
+	  #images img{
+		max-width: 100%;
+		width: 100%;
+		margin-left: 50%;
+		height: auto !important;
+	}
+	#images li {
+		max-width: 100%;
+		width: 100%;
+		height: auto !important;
 	}
   }
 
@@ -339,12 +413,46 @@ svg {
 		font-size: 1.05em;
 		height: auto;
 		overflow: hidden;
+		padding: 20px;
+		font-size: .8em;
 	}
 	.privacy, .quick_links {
 		display: inline-block;
 		margin: 0 auto;
 	}
-
+	h1 {
+		text-align: center;
+		font-size: 2em !important; 
+	}
+	.left {
+		width: 50%;
+	}
+	.right {
+		width: 50%;
+	}
+	#images img{
+		max-width: 100%;
+		width: 100%;
+		height: auto !important;
+		margin-left: -50%;
+	}
+	#images li {
+		max-width: 100%;
+		width: 100%;
+		height: auto !important;
+	}
+	.quick_links {
+		margin-left: -5%;
+	}
+	.privacy {
+		margin-left: 2.5%;
+	}
+	.map iframe {
+		width: 80%;
+	}
+	.row {
+		margin-right: 10%;
+	}
   }
 
   @media only screen and (min-width: 1180px)  {
@@ -356,5 +464,21 @@ svg {
 	.privacy, .quick_links {
 		display: inline-block;
 		margin: 0 auto;
+	}
+	h1 {
+		font-size: 2.5em !important; 
+		text-align: center;
+	}
+	.left {
+		width: 35%;
+	}
+	.right {
+		width: 65%;
+	}
+	footer {
+		padding: 15px;
+	}
+	.privacy {
+		margin-left: 10px;
 	}
   }
